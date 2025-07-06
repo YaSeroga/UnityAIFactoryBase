@@ -19,6 +19,8 @@ public class GameInstance : IInitializable, IDisposable, ITickable
     public event Action<bool> OnPauseStateChanged;
     public event Action OnGameInstanceReset;
 
+    [Inject] private SaveLoadManager _saveLoadManager;
+
     public void Initialize()
     {
         Debug.Log("GameInstance initialized - persists across scenes");
@@ -115,6 +117,27 @@ public class GameInstance : IInitializable, IDisposable, ITickable
         OnLevelChanged?.Invoke(_level);
         
         Debug.Log($"Loaded save data: Level {_level}, Score {_score}, Time {_gameTime:F1}s");
+    }
+
+    public void SaveGame()
+    {
+        _saveLoadManager?.SaveGame();
+    }
+
+    public void LoadGame()
+    {
+        _saveLoadManager?.LoadGame();
+    }
+
+    public void DeleteSave()
+    {
+        _saveLoadManager?.DeleteSave();
+        ResetGameData();
+    }
+
+    public bool HasSaveFile()
+    {
+        return _saveLoadManager?.HasSaveFile() ?? false;
     }
 }
 
