@@ -1,15 +1,13 @@
 {
   "dependencies": {
-    "com.gamelovers.mcp-unity": {
-      "version": "https://github.com/CoderGamester/mcp-unity.git",
+    "com.codemaestroai.advancedunitymcp": {
+      "version": "https://github.com/codemaestroai/advanced-unity-mcp.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1",
-        "com.unity.editorcoroutines": "1.0.0",
-        "com.unity.test-framework": "1.3.3"
+        "com.unity.nuget.newtonsoft-json": "3.0.2"
       },
-      "hash": "71e48418770f4a75b22f975257c335cb650da615"
+      "hash": "838c81acf2171eb01ccb63283ddfaf68d13dcb0e"
     },
     "com.unity.2d.animation": {
       "version": "11.0.0",
@@ -108,13 +106,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.collab-proxy": {
-      "version": "2.8.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.collections": {
       "version": "2.5.1",
       "depth": 1,
@@ -125,13 +116,6 @@
         "com.unity.nuget.mono-cecil": "1.11.4",
         "com.unity.test-framework.performance": "3.0.3"
       },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.editorcoroutines": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
@@ -295,16 +279,6 @@
         "com.unity.modules.ui": "1.0.0",
         "com.unity.modules.imgui": "1.0.0"
       }
-    },
-    "com.unity.visualscripting": {
-      "version": "1.9.7",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
